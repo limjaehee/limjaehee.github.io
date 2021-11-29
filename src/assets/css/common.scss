@@ -1,0 +1,55 @@
+//공통 컬러
+$c-color: #da5572;
+
+//헤더 ----------------------------------
+$gnbH: 48px;
+$headerW: 80px + $gnbH;
+$headerT: 60px + $gnbH;
+$headerM: 56px;
+
+//반응형 폰트 사이즈 ----------------------
+$tablet: 15px;
+$mobile: 14px;
+$fold: 12px;
+
+//반응형 width 정의 -----------------------
+$tabletW: 1025px;
+$mobileW: 599px;
+$foldW: 320px;
+
+//푸터 --------------------------------
+$footer: 126px;
+
+/*------------
+  공통 mixin
+--------------*/
+
+//gradientBackground ie6+
+@mixin gradientBackground($deg, $color1, $color2) {
+  background: -moz-linear-gradient($deg, $color1, $color2);
+  background: -webkit-linear-gradient($deg, $color1, $color2);
+  background: linear-gradient($deg, $color1, $color2);
+}
+
+//폰트 사이즈
+@function calculate-rem($size, $default) {
+  $rem-size: $size/$default;
+  @return $rem-size * 1rem;
+}
+
+@mixin font-size($size) {
+  //font-size:$size;
+  font-size: calculate-rem($size, 16px);
+}
+
+//inner
+@mixin inner($i) {
+  padding: 0 $i;
+}
+
+//백그라운드 이미지 흐릴 때
+@mixin imageRendering() {
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

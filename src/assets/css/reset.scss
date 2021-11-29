@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+input,
+select,
+textarea,
+button,
+.ui-btn,
+pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "noto-fonts", sans-serif;
+  font-weight: 300;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+span,
+a,
+strong,
+em,
+i,
+address {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ul li:before {
+  list-style: none;
+  content: none !important;
+}
+textarea {
+  margin: 0;
+  overflow-y: auto !important;
+  font-size: 1rem;
+  resize: none !important;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+//숨기기
+[hidden] {
+  display: none;
+}
+
+form {
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    display: none;
+  }
+}
+
+//태블릿
+@media screen and (max-width: $tabletW) {
+  //이너
+  html,
+  body {
+    font-size: $tablet;
+  }
+}
+
+//모바일
+@media screen and (max-width: $mobileW) {
+  //이너
+  html,
+  body {
+    font-size: $mobile;
+  }
+}
+
+//모바일
+@media screen and (max-width: $foldW) {
+  //이너
+  html,
+  body {
+    font-size: $fold;
+  }
+}
