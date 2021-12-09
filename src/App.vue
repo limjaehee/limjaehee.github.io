@@ -8,4 +8,6 @@
 export default {};
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import url("./assets/css/reset.scss");
+</style>

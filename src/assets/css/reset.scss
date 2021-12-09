@@ -33,7 +33,6 @@ p,
 dl,
 dt,
 dd,
-ol,
 ul,
 li,
 span,
@@ -45,6 +44,11 @@ address {
   margin: 0;
   padding: 0;
 }
+
+ol {
+  margin: 0;
+}
+
 article,
 aside,
 details,
@@ -58,7 +62,8 @@ nav,
 section {
   display: block;
 }
-ul li:before {
+ul li:before,
+ul li::marker {
   list-style: none;
   content: none !important;
 }

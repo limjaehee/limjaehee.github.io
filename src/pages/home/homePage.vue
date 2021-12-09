@@ -1,17 +1,16 @@
 <template>
-  <div>sdfsdf</div>
+  <div>
+    <Nav></Nav>
+  </div>
 </template>
 
 <script>
+import Nav from "../../components/organisms/Nav.vue";
 export default {
-  data() {
-    return {};
-  },
-
-  mounted() {},
-
-  methods: {}
+  components: {
+    Nav
+  }
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>
