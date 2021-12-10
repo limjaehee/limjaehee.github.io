@@ -10,7 +10,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 //index.js에서 컴포넌트 가져오기
-import { homePage } from "./pages";
+import { homePage, userPage, contactPage } from "./pages";
 
 //store
 import { store } from "./store";
@@ -20,12 +20,23 @@ const routes = [
   {
     path: "/", //경로 설정
     component: homePage //컴포넌트 이름
+  },
+  {
+    path: "/userPage", //경로 설정
+    component: userPage //컴포넌트 이름
+  },
+  {
+    path: "/contactPage", //경로 설정
+    component: contactPage //컴포넌트 이름
   }
 ];
 
 // router 객체생성
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  }
 });
 
 new Vue({

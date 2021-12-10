@@ -10,6 +10,14 @@ body {
   min-height: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
+}
+
 body,
 input,
 select,
@@ -96,32 +104,5 @@ form {
 
   legend {
     display: none;
-  }
-}
-
-//태블릿
-@media screen and (max-width: $tabletW) {
-  //이너
-  html,
-  body {
-    font-size: $tablet;
-  }
-}
-
-//모바일
-@media screen and (max-width: $mobileW) {
-  //이너
-  html,
-  body {
-    font-size: $mobile;
-  }
-}
-
-//폴드
-@media screen and (max-width: $foldW) {
-  //이너
-  html,
-  body {
-    font-size: $fold;
   }
 }

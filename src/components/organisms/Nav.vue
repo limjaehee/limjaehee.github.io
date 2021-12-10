@@ -22,6 +22,7 @@
           :RouterLink="item.link"
           :commonClass="'gnb-button'"
           :iconClass="item.icon"
+          :class="{ darkmode: $store.state.darkmode }"
         ></RouterIcon>
       </li>
       <li class="nav__wrapper__list">
@@ -48,11 +49,11 @@ export default {
           icon: "home"
         },
         {
-          link: "/aa",
+          link: "/contactPage",
           icon: "talk"
         },
         {
-          link: "/bb",
+          link: "/userPage",
           icon: "user"
         }
       ],
@@ -73,10 +74,10 @@ export default {
     }
   },
   mounted() {
-    this.Modal = true;
-    setTimeout(() => {
-      this.Modal = false;
-    }, 1000);
+    // this.Modal = true;
+    // setTimeout(() => {
+    //   this.Modal = false;
+    // }, 1000);
   }
 };
 </script>
@@ -97,6 +98,7 @@ export default {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     box-sizing: border-box;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
 
     &__list {
       padding: 0 20px;
@@ -139,8 +141,11 @@ export default {
 
 .gnb-button {
   color: #848484;
-  &.router-link-active {
+  &.router-link-exact-active {
     color: #000;
+  }
+  &.router-link-exact-active.darkmode {
+    color: #fff;
   }
   &__icon {
     @include font-size(24px);

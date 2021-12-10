@@ -33,7 +33,12 @@ export default {
     padding: 4px 16px;
     color: #333;
     margin-right: 8px;
-    @include font-size(20px);
+    @include font-size(16px);
+    margin-bottom: 10px;
+    &:hover {
+      cursor: pointer;
+      background: #ddd;
+    }
   }
 }
 </style>

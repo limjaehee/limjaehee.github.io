@@ -4,6 +4,7 @@
       <ButtonMessage
         class="card__image__btn"
         :message="'자세히 보기'"
+        :active="true"
       ></ButtonMessage>
       <ImageWrap :image="image"></ImageWrap>
     </div>

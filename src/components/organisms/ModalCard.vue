@@ -1,15 +1,45 @@
 <template>
   <div class="modal-card" :class="{ darkmode: $store.state.darkmode }">
-    <div class="modal-card__image">
+    <div class="modal-card__btn-wrap">
       <ButtonIcon
         :iconClass="'prev'"
         :commonClass="'modal-card__btn'"
+        @click="$emit('close')"
       ></ButtonIcon>
+    </div>
+    <div class="modal-card__image">
       <ImageWrap></ImageWrap>
     </div>
-    <article>
-      <h3>제목입니다.</h3>
+    <article class="modal-card-detail">
+      <div class="modal-card-detail__buttons">
+        <ButtonMessage
+          v-if="github != null && github != ''"
+          @click="goPage(github)"
+          :message="'깃허브'"
+          :active="false"
+          class="modal-card-detail__buttons__item"
+        ></ButtonMessage>
+        <ButtonMessage
+          :message="'방문하기'"
+          v-if="link != null && link != ''"
+          @click="goPage(link)"
+          :active="true"
+          class="modal-card-detail__buttons__item"
+        ></ButtonMessage>
+      </div>
+      <h2 class="modal-card-detail__title">
+        {{ title }}
+      </h2>
       <Tag :Tag="Tag"></Tag>
+      <ul class="modal-card-detail__list">
+        <li
+          v-for="item in CardDetail"
+          :key="item.i"
+          class="modal-card-detail__list__item"
+        >
+          <TitleAndText :title="item.title" :text="item.text"></TitleAndText>
+        </li>
+      </ul>
     </article>
   </div>
 </template>
@@ -18,21 +48,49 @@
 import Tag from "../atoms/Tag.vue";
 import ImageWrap from "../atoms/ImageWrap.vue";
 import ButtonIcon from "../atoms/ButtonIcon.vue";
+import TitleAndText from "../atoms/TitleAndText.vue";
+import ButtonMessage from "../atoms/ButtonMessage.vue";
 export default {
-  data() {
-    return {
-      Tag: ["html", "css", "vue.js", "javascript"]
-    };
+  props: {
+    title: {
+      type: String,
+      default: "제목입니다."
+    },
+    Tag: {
+      type: Array,
+      default: null
+    },
+    CardDetail: {
+      type: Array,
+      default: null
+    },
+    github: {
+      type: String,
+      default: null
+    },
+    link: {
+      type: String,
+      default: null
+    }
   },
-
+  data() {
+    return {};
+  },
   mounted() {},
   components: {
     Tag,
     ImageWrap,
-    ButtonIcon
+    ButtonIcon,
+    TitleAndText,
+    ButtonMessage
   },
 
-  methods: {}
+  methods: {
+    goPage(link) {
+      var win = window.open(link, "_blank");
+      win.focus();
+    }
+  }
 };
 </script>
 
@@ -42,7 +100,7 @@ export default {
   left: 50%;
   top: 48%;
   transform: translate(-50%, -50%);
-  width: 82%;
+  width: calc(100% - 16rem);
   height: 80%;
   z-index: 50;
   background: #fff;
@@ -50,11 +108,25 @@ export default {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
   display: flex;
   overflow: hidden;
-  transition: 0.5s;
 
   &.darkmode {
     background: #000;
     box-shadow: 0 3px 15px rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+
+  &__btn-wrap {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    width: 45%;
   }
 
   &__btn {
@@ -70,21 +142,106 @@ export default {
 
   &__image {
     width: 45%;
+    flex: 0 0 45%;
+  }
+
+  &-detail {
+    padding: 100px 0 50px 40px;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 65%;
     position: relative;
 
-    &::before {
-      content: "";
-      display: block;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #aaa;
+      border-radius: 10px;
+    }
+
+    &__buttons {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 30px;
+      right: 50px;
+
+      &__item {
+        margin-left: 10px;
+      }
+    }
+
+    &__title {
+      font-weight: 300;
+      padding-bottom: 20px;
+    }
+
+    &__list {
+      &__item {
+        padding-top: 60px;
+      }
+    }
+  }
+}
+
+//웹
+@media screen and (max-width: $wrapW) {
+  .modal-card {
+    width: calc(100% - 4rem);
+  }
+}
+
+//태블릿
+@media screen and (max-width: $tabletW) {
+}
+
+//모바일
+@media screen and (max-width: $mobileW) {
+  .modal-card {
+    width: calc(100% - 2rem);
+    display: block;
+    height: 80%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__btn {
+      left: 20px;
+    }
+
+    &__btn-wrap {
+      position: sticky;
       width: 100%;
-      height: 200px;
-      background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.45) 0%,
-        rgba(0, 0, 0, 0) 100%
-      );
+      height: 100px;
+      z-index: 3;
+    }
+
+    &__image {
+      width: 100%;
+      height: 400px;
+      margin-top: -100px;
+    }
+
+    &-detail {
+      width: 100%;
+      overflow: visible;
+      padding: 100px 1rem 50px 1rem;
+      height: auto;
+      overflow: hidden;
+
+      &__buttons {
+        right: 1rem;
+      }
+
+      &__list {
+        &__item {
+          padding-top: 40px;
+        }
+      }
     }
   }
 }
