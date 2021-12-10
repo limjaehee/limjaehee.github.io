@@ -12,7 +12,8 @@
   "dependencies": {
     "sass-resources-loader": "^2.2.4",
     "vue": "^2.5.11",
-    "vue-router": "^3.5.3"
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
   },
   "browserslist": [
     "> 1%",

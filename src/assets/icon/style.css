@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gqg7cr');
-  src:  url('fonts/icomoon.eot?gqg7cr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gqg7cr') format('truetype'),
-    url('fonts/icomoon.woff?gqg7cr') format('woff'),
-    url('fonts/icomoon.svg?gqg7cr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gek965');
+  src:  url('fonts/icomoon.eot?gek965#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gek965') format('truetype'),
+    url('fonts/icomoon.woff?gek965') format('woff'),
+    url('fonts/icomoon.svg?gek965#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,24 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-keyboard_control:before {
+.icon-prev:before {
+  content: "\e907";
+}
+.icon-image:before {
   content: "\e900";
+}
+.icon-keyboard_control:before {
+  content: "\e901";
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-setting:before {
+  content: "\e903";
+}
+.icon-user:before {
+  content: "\e904";
+}
+.icon-talk:before {
+  content: "\e905";
+}
+.icon-home:before {
+  content: "\e906";
 }
 .icon-vimeo:before {
   content: "\eaa0";
-}
-.icon-github:before {
-  content: "\e901";
-}
-.icon-setting:before {
-  content: "\e902";
-}
-.icon-user:before {
-  content: "\e903";
-}
-.icon-talk:before {
-  content: "\e904";
-}
-.icon-home:before {
-  content: "\e905";
 }

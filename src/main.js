@@ -12,6 +12,9 @@ Vue.use(VueRouter);
 //index.js에서 컴포넌트 가져오기
 import { homePage } from "./pages";
 
+//store
+import { store } from "./store";
+
 //router 등록공간
 const routes = [
   {
@@ -27,5 +30,6 @@ const router = new VueRouter({
 
 new Vue({
   render: h => h(App),
-  router // router 추가
+  router, // router 추가
+  store
 }).$mount("#app");

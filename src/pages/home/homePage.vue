@@ -1,14 +1,63 @@
 <template>
-  <div>
-    <Nav></Nav>
-  </div>
+  <NavLayout>
+    <CardList :CardValue="CardValue" @click="CardClick"></CardList>
+    <ModalCard></ModalCard>
+  </NavLayout>
 </template>
 
 <script>
-import Nav from "../../components/organisms/Nav.vue";
+import CardList from "../../components/organisms/CardList.vue";
+import ModalCard from "../../components/organisms/ModalCard.vue";
+import NavLayout from "../../components/templates/NavLayout.vue";
 export default {
+  data() {
+    return {
+      CardValue: [
+        {
+          title: "assss",
+          image: ""
+        },
+        {
+          title: "sddfdf",
+          image: ""
+        },
+        {
+          title: "rwerwer",
+          image: ""
+        },
+        {
+          title: "gdfg",
+          image: ""
+        },
+        {
+          title: "gdfg",
+          image: ""
+        },
+        {
+          title: "gdfg",
+          image: ""
+        },
+        {
+          title: "gdfg",
+          image: ""
+        },
+        {
+          title: "gdfg",
+          image: ""
+        }
+      ]
+    };
+  },
   components: {
-    Nav
+    CardList,
+    NavLayout,
+    ModalCard
+  },
+  methods: {
+    CardClick(index) {
+      console.log("sss");
+      console.log(index);
+    }
   }
 };
 </script>

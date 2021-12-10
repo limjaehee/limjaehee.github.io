@@ -1,0 +1,16 @@
+
+//웹
+@media screen and (max-width: $wrapW) {
+}
+
+//태블릿
+@media screen and (max-width: $tabletW) {
+}
+
+//모바일
+@media screen and (max-width: $mobileW) {
+}
+
+//폴드
+@media screen and (max-width: $foldW) {
+}
