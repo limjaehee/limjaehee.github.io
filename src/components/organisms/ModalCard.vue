@@ -8,7 +8,35 @@
       ></ButtonIcon>
     </div>
     <div class="modal-card__image">
-      <ImageWrap></ImageWrap>
+      <swiper
+        ref="mySwiper"
+        :options="swiperOptions"
+        @slideChange="changeSwiperIndex"
+        class="modal-card__swiper"
+      >
+        <swiper-slide
+          class="modal-card__swiper__slide"
+          v-for="item in SubImage"
+          :key="item.i"
+        >
+          <a
+            :href="require('../../assets/image/' + item)"
+            class="modal-card__image__open"
+            target="_blank"
+          >
+            <ImageWrap :Image="item"></ImageWrap>
+          </a>
+        </swiper-slide>
+      </swiper>
+      <ul class="pagenation">
+        <li
+          class="pagenation__button"
+          @click="PageNation(index)"
+          v-for="(item, index) in SubImage.length"
+          :key="item.i"
+          :class="{ on: index == SwiperIndex }"
+        ></li>
+      </ul>
     </div>
     <article class="modal-card-detail">
       <div class="modal-card-detail__buttons">
@@ -71,10 +99,27 @@ export default {
     link: {
       type: String,
       default: null
+    },
+    SubImage: {
+      type: Array,
+      default: null
     }
   },
   data() {
-    return {};
+    return {
+      //스와이퍼
+      swiperOptions: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      },
+      SwiperIndex: 0
+    };
   },
   mounted() {},
   components: {
@@ -89,6 +134,15 @@ export default {
     goPage(link) {
       var win = window.open(link, "_blank");
       win.focus();
+    },
+    //swiper index구하기 -----------------------------
+    changeSwiperIndex() {
+      this.SwiperIndex = this.$refs.mySwiper.$swiper.activeIndex;
+      console.log(this.SwiperIndex);
+    },
+    //스와이퍼 페이지 이동
+    PageNation(i) {
+      this.$refs.mySwiper.$swiper.slideTo(i);
     }
   }
 };
@@ -120,13 +174,14 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    height: 200px;
+    height: 100px;
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.45) 0%,
       rgba(0, 0, 0, 0) 100%
     );
     width: 45%;
+    z-index: 2;
   }
 
   &__btn {
@@ -143,6 +198,22 @@ export default {
   &__image {
     width: 45%;
     flex: 0 0 45%;
+    position: relative;
+
+    &__open {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &__slide {
+    }
   }
 
   &-detail {
@@ -180,6 +251,27 @@ export default {
       &__item {
         padding-top: 60px;
       }
+    }
+  }
+}
+
+.pagenation {
+  position: absolute;
+  bottom: 30px;
+  z-index: 2;
+  left: 0;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__button {
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    display: block;
+
+    &.on {
+      background: $c-color;
     }
   }
 }

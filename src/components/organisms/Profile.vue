@@ -1,59 +1,72 @@
 <template>
   <div class="profile" :class="{ darkmode: $store.state.darkmode }">
     <div class="profile__picture">
-      <ImageWrap></ImageWrap>
+      <ImageWrap :Image="'profile.jpg'"></ImageWrap>
     </div>
     <p class="profile__name">임재희</p>
-    <em class="profile__comment">안녕하세요 어쩌구 저쩌구 입니다.</em>
+    <em class="profile__comment"
+      >안녕하세요:) 프론트엔드 2년차 임재희입니다.</em
+    >
     <p>
-      Lorem ipsum dolor sit amet consectetur <br />adipisicing elit. Repellat
-      debitis<br /><br />
-      totam nam fuga, maxime vitae quia magni<br />
-      sapiente provident veritatis velit<br />
-      aperiam dolore beatae id <br />quod qui sit molestiae tenetur.
+      "안되는건 없다 일단 해보자"라는 마인드로<br />
+      html, jQuery, css에만 안주하지 않고 <br />
+      vue.js와 scss, git을 배우며 프론트앤드로의 전문성을 높혀가고 있습니다.<br />
+      <br />
+      꾸준한 공부를 위해 벨로그에 지식을 기록하며 공유하고<br />
+      깃허브에 코드 소스를 정리해놓고 있습니다.
     </p>
-    <h3 class="profile__sub-title">Study</h3>
-    <div class="profile__button-wrapper">
-      <ButtonIcon
-        :iconClass="'github'"
-        :commonClass="'profile__button'"
-        @click="goPage('https://github.com/limjaehee')"
-      ></ButtonIcon>
-      <ButtonIcon
-        :iconClass="'vimeo'"
-        :commonClass="'profile__button'"
-        @click="goPage('https://velog.io/@rhak39')"
-      ></ButtonIcon>
-    </div>
-    <h3 class="profile__sub-title">Skills</h3>
-    <ul class="profile__skills">
-      <li
-        class="profile__skills__item"
-        v-for="item in skills"
-        :key="item.i"
-        :class="{ darkmode: $store.state.darkmode }"
-      >
-        {{ item }}
+    <ul class="profile__info">
+      <li class="profile__info__item">
+        <h3 class="profile__sub-title">Study</h3>
+        <div class="profile__button-wrapper">
+          <ButtonIcon
+            :iconClass="'github'"
+            :commonClass="'profile__button'"
+            @click="goPage('https://github.com/limjaehee')"
+          ></ButtonIcon>
+          <ButtonIcon
+            :iconClass="'vimeo'"
+            :commonClass="'profile__button'"
+            @click="goPage('https://velog.io/@rhak39')"
+          ></ButtonIcon>
+        </div>
+      </li>
+      <li class="profile__info__item">
+        <h3 class="profile__sub-title">Skills</h3>
+        <ul class="profile__skills">
+          <li
+            class="profile__skills__item"
+            v-for="item in skills"
+            :key="item.i"
+            :class="{ darkmode: $store.state.darkmode }"
+          >
+            {{ item }}
+          </li>
+        </ul>
+      </li>
+      <li class="profile__info__item">
+        <h3 class="profile__sub-title">Career</h3>
+        <p class="profile__sub-text">
+          <em
+            class="profile__sub-text__title"
+            :class="{ darkmode: $store.state.darkmode }"
+            >The Join</em
+          >
+          2020.11.02~2021.11.30
+        </p>
+      </li>
+      <li class="profile__info__item">
+        <h3 class="profile__sub-title">Activity</h3>
+        <p class="profile__sub-text">
+          <em
+            class="profile__sub-text__title"
+            :class="{ darkmode: $store.state.darkmode }"
+            >이젠아카데미(모바일 웹 &#38; 앱디자인)</em
+          >
+          2020.05.15~2020.10.06
+        </p>
       </li>
     </ul>
-    <h3 class="profile__sub-title">Career</h3>
-    <p class="profile__sub-text">
-      <em
-        class="profile__sub-text__title"
-        :class="{ darkmode: $store.state.darkmode }"
-        >The Join</em
-      >
-      2020.11.02~2021.11.30
-    </p>
-    <h3 class="profile__sub-title">Activity</h3>
-    <p class="profile__sub-text">
-      <em
-        class="profile__sub-text__title"
-        :class="{ darkmode: $store.state.darkmode }"
-        >이젠아카데미(모바일 웹 &#38; 앱디자인)</em
-      >
-      2020.05.15~2020.10.06
-    </p>
   </div>
 </template>
 
@@ -119,7 +132,7 @@ export default {
   &::before {
     content: "";
     width: 100%;
-    background: #f8f8f8;
+    background: #f5f5f5;
     height: 100%;
     display: block;
     position: absolute;
@@ -149,9 +162,9 @@ export default {
   }
 
   &__sub-title {
-    font-weight: 400;
-    @include font-size(18px);
-    padding: 65px 0 35px;
+    font-weight: 600;
+    @include font-size(20px);
+    padding: 0 0 35px;
   }
 
   &__button-wrapper {
@@ -219,6 +232,26 @@ export default {
         margin: 0 16px 0 10px;
         background: #000;
         vertical-align: middle;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    padding: 0 1rem;
+
+    &__item {
+      width: 25%;
+      text-align: center;
+      background: #fff;
+      padding: 2rem 0 0 0;
+      margin-top: 2rem;
+      margin: 2rem 1rem 0 0;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

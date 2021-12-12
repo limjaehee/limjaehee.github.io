@@ -15,6 +15,11 @@ import { homePage, userPage, contactPage } from "./pages";
 //store
 import { store } from "./store";
 
+//swiper
+import VueAwesomeSwiper from "vue-awesome-swiper";
+import "swiper/swiper-bundle.css";
+Vue.use(VueAwesomeSwiper /* { default options with global component } */);
+
 //router 등록공간
 const routes = [
   {
