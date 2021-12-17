@@ -1,5 +1,11 @@
 <template>
   <NavLayout>
+    <TitleAndText
+      :title="'Project'"
+      :type="'h2'"
+      :text="''"
+      :TitleStyle="TitleStyle()"
+    ></TitleAndText>
     <CardList :CardValue="CardValue" @click="CardClick"></CardList>
     <transition name="center">
       <ModalCard
@@ -17,6 +23,7 @@
 </template>
 
 <script>
+import TitleAndText from "../../components/atoms/TitleAndText.vue";
 import CardList from "../../components/organisms/CardList.vue";
 import ModalCard from "../../components/organisms/ModalCard.vue";
 import NavLayout from "../../components/templates/NavLayout.vue";
@@ -226,6 +233,7 @@ export default {
         {
           title: "건기식",
           image: "건기식.png",
+          SubImage: ["건기식.png"],
           github: "",
           link: "",
           Tag: ["vue.js", "html5", "scss", "javascript", "chart.js"],
@@ -298,12 +306,18 @@ export default {
   components: {
     CardList,
     NavLayout,
-    ModalCard
+    ModalCard,
+    TitleAndText
   },
   methods: {
     CardClick(index) {
       this.cardIndex = index;
       this.card = true;
+    },
+    TitleStyle() {
+      return {
+        paddingTop: "5vh"
+      };
     }
   }
 };

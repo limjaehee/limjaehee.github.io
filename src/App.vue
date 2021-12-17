@@ -16,6 +16,7 @@ export default {};
 
 #app.darkmode {
   background: #000;
+  color: #fff;
 }
 
 h2 {

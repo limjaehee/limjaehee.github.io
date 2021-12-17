@@ -3,6 +3,7 @@ body {
   width: 100%;
   min-height: 100%;
   height: 100%;
+  font-size: 15px;
 }
 
 #app {
@@ -24,6 +25,7 @@ select,
 textarea,
 button,
 .ui-btn,
+figure,
 pre {
   margin: 0;
   padding: 0;

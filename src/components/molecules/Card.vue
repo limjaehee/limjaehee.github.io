@@ -1,39 +1,43 @@
 <template>
-  <div class="card" @click="$emit('click')">
+  <figure
+    class="card"
+    @click="$emit('click')"
+    :class="{ darkmode: $store.state.darkmode }"
+  >
     <div class="card__image">
-      <ButtonMessage
-        class="card__image__btn"
-        :message="'자세히 보기'"
-        :active="true"
-      ></ButtonMessage>
-      <ImageWrap :image="image"></ImageWrap>
+      <ImageWrap :Image="Image"></ImageWrap>
     </div>
-    <div class="card__message">
+    <figcaption
+      class="card__message"
+      :class="{ darkmode: $store.state.darkmode }"
+    >
       <h3
         class="card__message__title"
         :class="{ darkmode: $store.state.darkmode }"
       >
         {{ title }}
       </h3>
-      <i
-        class="icon-keyboard_control card__message__icon"
-        :class="{ darkmode: $store.state.darkmode }"
-      ></i>
-    </div>
-  </div>
+      <Tag :Tag="Tag"></Tag>
+    </figcaption>
+  </figure>
 </template>
 
 <script>
 import ImageWrap from "../atoms/ImageWrap.vue";
 import ButtonMessage from "../atoms/ButtonMessage.vue";
+import Tag from "../atoms/Tag.vue";
 export default {
   props: {
     title: {
       type: String,
       default: "제목입니다."
     },
-    image: {
+    Image: {
       type: String,
+      default: null
+    },
+    Tag: {
+      type: Array,
       default: null
     }
   },
@@ -42,7 +46,8 @@ export default {
   },
   components: {
     ImageWrap,
-    ButtonMessage
+    ButtonMessage,
+    Tag
   },
 
   mounted() {},
@@ -55,74 +60,115 @@ export default {
 .card {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 
   &__image {
     width: 100%;
-    height: calc(100% - 30px);
-    border-radius: 10px;
+    height: 100%;
     overflow: hidden;
     position: relative;
+    transition: 0.5s;
+    flex: none;
+  }
 
-    &__btn {
-      position: absolute;
-      right: 24px;
-      top: 24px;
-      opacity: 0;
-      transition: 0.4s;
-      z-index: 3;
-    }
-
-    &::after {
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0);
-      z-index: 2;
-      transition: 0.5s;
+  &.darkmode {
+    &:hover {
+      box-shadow: 0 1px 30px rgba(255, 255, 255, 0.15);
     }
   }
 
   &:hover {
     cursor: pointer;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
     .card__image {
-      &__btn {
-        opacity: 1;
-      }
-      &::after {
-        background: rgba(0, 0, 0, 0.4);
-      }
+      flex: initial;
     }
   }
 
   &__message {
-    display: flex;
     justify-content: space-between;
-    padding-top: 6px;
+    padding: 6px 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+
+    &.darkmode {
+      background: rgba(0, 0, 0, 0.2);
+    }
 
     &__title {
       @include font-size(16px);
-      font-weight: 300;
+      font-weight: 400;
       color: #333;
       transition: 0.5s;
-
-      &.darkmode {
-        color: #fff;
-      }
-    }
-
-    &__icon {
-      @include font-size(24px);
-      color: #999;
-      transition: 0.5s;
+      padding-bottom: 10px;
 
       &.darkmode {
         color: #fff;
       }
     }
   }
+}
+
+//웹
+@media screen and (max-width: $wrapW) {
+}
+
+//태블릿
+@media screen and (max-width: $tabletW) {
+}
+
+//모바일
+@media screen and (max-width: $mobileW) {
+  .card {
+    display: block;
+    &__message {
+    }
+
+    &__image {
+      flex: none;
+    }
+
+    &__message {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
+      .tag {
+        &__item {
+          display: none;
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            display: block;
+          }
+        }
+
+        &::after {
+          content: "...";
+          display: inline-block;
+          align-self: center;
+          color: #999;
+          margin-bottom: 4px;
+          @include font-size(20px);
+        }
+      }
+
+      &.darkmode {
+        .tag {
+          &::after {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+//폴드
+@media screen and (max-width: $foldW) {
 }
 </style>

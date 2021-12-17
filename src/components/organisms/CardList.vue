@@ -7,7 +7,8 @@
     >
       <Card
         :title="item.title"
-        :image="item.image"
+        :Image="item.image"
+        :Tag="item.Tag"
         @click="$emit('click', index)"
       ></Card>
     </li>
@@ -46,10 +47,30 @@ export default {
     height: 20vw;
     flex: 0 0 calc(100% / 3 - 64px / 3);
     margin-right: 32px;
-    padding-top: 40px;
+    margin-bottom: 40px;
+    animation: cardUp 1 1s forwards;
+    opacity: 0;
+
+    /* SCSS */
+    @for $i from 1 to 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: ($i * 0.1) + s;
+      }
+    }
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    @keyframes cardUp {
+      0% {
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
     }
   }
 }
@@ -63,15 +84,16 @@ export default {
   .card-list {
     padding-bottom: 20vh;
     &__item {
-      flex: 0 0 calc(100% / 2 - 32px / 2);
-      margin-right: 16px;
+      flex: 0 0 calc(50% - (20px / 2));
+      margin-right: 0;
       height: 28vw;
 
-      &:nth-child(2n) {
+      &:nth-child(3n) {
         margin-right: 0;
       }
-      &:nth-child(3n) {
-        margin-right: 16px;
+
+      &:nth-child(odd) {
+        margin-right: 20px;
       }
     }
   }
@@ -85,6 +107,10 @@ export default {
     &__item {
       margin-right: 0;
       height: 80vw;
+
+      &:nth-child(odd) {
+        margin-right: 0px;
+      }
 
       &:nth-child(2n) {
         margin-right: 0;

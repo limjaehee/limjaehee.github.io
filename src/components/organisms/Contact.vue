@@ -150,6 +150,19 @@ export default {
   &__message {
     flex: 0 0 40%;
     margin-right: 105px;
+    animation: Message 1 1s forwards;
+
+    @keyframes Message {
+      0% {
+        opacity: 0;
+        transform: translatey(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translatey(0px);
+      }
+    }
 
     &__sub {
       color: #707070;

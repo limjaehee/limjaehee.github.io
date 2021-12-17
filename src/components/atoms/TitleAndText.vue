@@ -1,7 +1,7 @@
 <template>
-  <div class="title-and-text">
+  <div class="title-and-text" :style="TitleStyle">
     <component :is="type" class="title-and-text__title">{{ title }}</component>
-    <p v-html="text" class="title-and-text__text"></p>
+    <p v-html="text" class="title-and-text__text" v-if="text != ''"></p>
   </div>
 </template>
 
@@ -19,6 +19,14 @@ export default {
     type: {
       type: String,
       default: "h3"
+    },
+    TitleStyle: {
+      type: Object,
+      default: function() {
+        return {
+          paddingTop: "0"
+        };
+      }
     }
   },
   data() {

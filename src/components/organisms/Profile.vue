@@ -5,7 +5,7 @@
     </div>
     <p class="profile__name">임재희</p>
     <em class="profile__comment"
-      >안녕하세요:) 프론트엔드 2년차 임재희입니다.</em
+      >안녕하세요:) <br />프론트엔드 2년차 임재희입니다.</em
     >
     <p>
       "안되는건 없다 일단 해보자"라는 마인드로<br />
@@ -159,6 +159,10 @@ export default {
     @include font-size(18px);
     font-style: unset;
     padding-bottom: 54px;
+
+    br {
+      display: none;
+    }
   }
 
   &__sub-title {
@@ -271,5 +275,20 @@ export default {
       height: 90px;
     }
   }
+}
+
+//모바일
+@media screen and (max-width: $mobileW) {
+  .profile {
+    &__comment {
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+//폴드
+@media screen and (max-width: $foldW) {
 }
 </style>
