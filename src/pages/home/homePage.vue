@@ -17,6 +17,8 @@
         :github="CardValue[cardIndex].github"
         :link="CardValue[cardIndex].link"
         :SubImage="CardValue[cardIndex].SubImage"
+        :NextImage="NextImage"
+        @current="NextCurrentImage"
       ></ModalCard>
     </transition>
   </NavLayout>
@@ -34,7 +36,20 @@ export default {
         {
           title: "서울시 대사증후군 고도화 사업",
           image: "온서울건강온.png",
-          SubImage: ["온서울건강온.png", "온서울건강온.png"],
+          SubImage: [
+            "온서울건강온.png",
+            "온서울건강온2.png",
+            "온서울건강온3.png",
+            "온서울건강온4.png",
+            "온서울건강온5.png",
+            "온서울건강온6.png",
+            "온서울건강온7.png",
+            "온서울건강온8.png",
+            "온서울건강온9.png",
+            "온서울건강온10.png",
+            "온서울건강온11.png",
+            "온서울건강온12.png"
+          ],
           github: "",
           link: "https://onhealth.seoul.go.kr/",
           Tag: ["vue.js", "html5", "scss", "javascript", "vuex", "chart.js"],
@@ -233,7 +248,18 @@ export default {
         {
           title: "건기식",
           image: "건기식.png",
-          SubImage: ["건기식.png"],
+          SubImage: [
+            "건기식.png",
+            "건기식2.png",
+            "건기식3.png",
+            "건기식4.png",
+            "건기식5.png",
+            "건기식6.png",
+            "건기식7.png",
+            "건기식8.png",
+            "건기식9.png",
+            "건기식10.png"
+          ],
           github: "",
           link: "",
           Tag: ["vue.js", "html5", "scss", "javascript", "chart.js"],
@@ -292,15 +318,13 @@ export default {
                 "1. 퍼블리싱 (100%)<br>2. 제이쿼리 모바일을 사용한 레이아웃 작업<br>3. d3.js를 활용한 data visualize"
             }
           ]
-        },
-        {
-          title: "",
-          image: ""
         }
       ],
       //팝업 카드
       card: false,
-      cardIndex: 0
+      cardIndex: 0,
+      NextImage: [],
+      NextIndex: []
     };
   },
   components: {
@@ -313,11 +337,35 @@ export default {
     CardClick(index) {
       this.cardIndex = index;
       this.card = true;
+
+      this.CurrentcardIndex(index);
     },
     TitleStyle() {
       return {
         paddingTop: "5vh"
       };
+    },
+    NextCurrentImage(index) {
+      this.cardIndex = this.NextIndex[index];
+
+      this.CurrentcardIndex(this.NextIndex[index]);
+    },
+    CurrentcardIndex(index) {
+      this.NextImage = [];
+      this.NextIndex = [];
+      var cnt = 0;
+
+      for (var i = index; i < index + 3; i++) {
+        if (i > this.CardValue.length - 2) {
+          //순번이 끝나갈 때
+          this.NextImage.push(this.CardValue[cnt].image);
+          this.NextIndex.push(cnt);
+          cnt = cnt + 1;
+        } else {
+          this.NextImage.push(this.CardValue[i + 1].image);
+          this.NextIndex.push(i + 1);
+        }
+      }
     }
   }
 };

@@ -20,7 +20,7 @@
           :key="item.i"
         >
           <a
-            :href="require('../../assets/image/' + item)"
+            :href="require('../../assets/image/content/' + item)"
             class="modal-card__image__open"
             target="_blank"
           >
@@ -38,7 +38,7 @@
         ></li>
       </ul>
     </div>
-    <article class="modal-card-detail">
+    <article class="modal-card-detail" ref="cardDetail">
       <div class="modal-card-detail__buttons">
         <ButtonMessage
           v-if="github != null && github != ''"
@@ -66,6 +66,17 @@
           class="modal-card-detail__list__item"
         >
           <TitleAndText :title="item.title" :text="item.text"></TitleAndText>
+        </li>
+      </ul>
+      <h3 class="modal-card__ohter-title">다른 작품 보기</h3>
+      <ul class="modal-card__other-image">
+        <li
+          class="modal-card__other-image__item"
+          v-for="(item, index) in NextImage"
+          :key="item.i"
+          @click="$emit('current', index), scrollTop()"
+        >
+          <ImageWrap :Image="item"></ImageWrap>
         </li>
       </ul>
     </article>
@@ -101,6 +112,10 @@ export default {
       default: null
     },
     SubImage: {
+      type: Array,
+      default: null
+    },
+    NextImage: {
       type: Array,
       default: null
     }
@@ -143,6 +158,24 @@ export default {
     //스와이퍼 페이지 이동
     PageNation(i) {
       this.$refs.mySwiper.$swiper.slideTo(i);
+    },
+    scrollTop() {
+      setTimeout(() => {
+        var CardDetail = document.querySelector(".modal-card-detail");
+        var Card = document.querySelector(".modal-card");
+        this.$refs.mySwiper.$swiper.slideTo(0);
+
+        CardDetail.scroll({
+          behavior: "smooth",
+          left: 0,
+          top: 0
+        });
+        Card.scroll({
+          behavior: "smooth",
+          left: 0,
+          top: 0
+        });
+      }, 0);
     }
   }
 };
@@ -164,7 +197,7 @@ export default {
   overflow: hidden;
 
   &.darkmode {
-    background: #000;
+    background: #1b1d20;
     box-shadow: 0 3px 15px rgba(255, 255, 255, 0.08);
     color: #fff;
   }
@@ -253,6 +286,45 @@ export default {
       }
     }
   }
+
+  &__ohter-title {
+    font-weight: 400;
+    padding-top: 40px;
+  }
+
+  &__other-image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 0 0;
+    box-sizing: border-box;
+
+    &__item {
+      width: 30%;
+      height: 120px;
+      cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 .pagenation {
@@ -333,6 +405,14 @@ export default {
         &__item {
           padding-top: 40px;
         }
+      }
+    }
+
+    &__other-image {
+      padding: 20px 0px 0 0;
+
+      &__item {
+        height: 80px;
       }
     }
   }

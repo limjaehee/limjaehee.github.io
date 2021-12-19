@@ -130,7 +130,7 @@ export default {
             }
           );
       } else {
-        alert("폼을 모두 입력해주세요.");
+        alert("내용을 모두 입력해주세요.");
       }
     }
   }

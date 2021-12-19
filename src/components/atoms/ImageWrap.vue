@@ -31,7 +31,7 @@ export default {
       if (this.ImageNull()) {
         return (
           "backgroundImage : url(" +
-          require("../../assets/image/" + Image) +
+          require("../../assets/image/content/" + Image) +
           ")"
         );
       }

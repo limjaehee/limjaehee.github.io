@@ -18,31 +18,46 @@
     <ul class="profile__info">
       <li class="profile__info__item">
         <h3 class="profile__sub-title">Study</h3>
-        <div class="profile__button-wrapper">
-          <ButtonIcon
-            :iconClass="'github'"
-            :commonClass="'profile__button'"
-            @click="goPage('https://github.com/limjaehee')"
-          ></ButtonIcon>
+        <ul class="profile__study">
+          <li class="profile__study__item study">
+            <ButtonIcon
+              :iconClass="'github'"
+              :commonClass="'profile__button'"
+              @click="goPage('https://github.com/limjaehee')"
+            ></ButtonIcon>
+            <p class="study__item">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+              deserunt id inventore esse laboriosam doloremque. Nam repudiandae
+              facilis molestias nulla error. Eos repellendus ratione est quia
+              excepturi eveniet nemo impedit.
+            </p>
+          </li>
+          <li class="profile__study__item study">
+            <ButtonIcon
+              :iconClass="'vimeo'"
+              :commonClass="'profile__button'"
+              @click="goPage('https://velog.io/@rhak39')"
+            ></ButtonIcon>
+            <p class="study__item">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+              deserunt id inventore esse laboriosam doloremque. Nam repudiandae
+              facilis molestias nulla error. Eos repellendus ratione est quia
+              excepturi eveniet nemo impedit.
+            </p>
+          </li>
+        </ul>
+        <!-- <div class="profile__button-wrapper">
+          
           <ButtonIcon
             :iconClass="'vimeo'"
             :commonClass="'profile__button'"
             @click="goPage('https://velog.io/@rhak39')"
           ></ButtonIcon>
-        </div>
+        </div> -->
       </li>
       <li class="profile__info__item">
         <h3 class="profile__sub-title">Skills</h3>
-        <ul class="profile__skills">
-          <li
-            class="profile__skills__item"
-            v-for="item in skills"
-            :key="item.i"
-            :class="{ darkmode: $store.state.darkmode }"
-          >
-            {{ item }}
-          </li>
-        </ul>
+        <Tag :Tag="skills" class="profile__skills"></Tag>
       </li>
       <li class="profile__info__item">
         <h3 class="profile__sub-title">Career</h3>
@@ -73,6 +88,7 @@
 <script>
 import ImageWrap from "../atoms/ImageWrap.vue";
 import ButtonIcon from "../atoms/ButtonIcon.vue";
+import Tag from "../atoms/Tag.vue";
 export default {
   data() {
     return {
@@ -96,7 +112,8 @@ export default {
   mounted() {},
   components: {
     ImageWrap,
-    ButtonIcon
+    ButtonIcon,
+    Tag
   },
   methods: {
     goPage(link) {
@@ -168,7 +185,7 @@ export default {
   &__sub-title {
     font-weight: 600;
     @include font-size(20px);
-    padding: 0 0 35px;
+    min-width: 100px;
   }
 
   &__button-wrapper {
@@ -194,21 +211,6 @@ export default {
   }
 
   &__skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 480px;
-
-    &__item {
-      color: #2c2c2c;
-      padding: 0 8px;
-      margin-bottom: 4px;
-
-      &.darkmode {
-        color: #fff;
-      }
-    }
   }
 
   &__sub-text {
@@ -234,30 +236,45 @@ export default {
         width: 1px;
         height: 16px;
         margin: 0 16px 0 10px;
-        background: #000;
+        background: #1b1d20;
         vertical-align: middle;
       }
     }
   }
 
   &__info {
-    display: flex;
     padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
 
     &__item {
-      width: 25%;
-      text-align: center;
+      text-align: left;
       background: #fff;
-      padding: 2rem 0 0 0;
-      margin-top: 2rem;
-      margin: 2rem 1rem 0 0;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      margin: 1rem 0 0 0;
       border-radius: 10px;
-
-      &:last-child {
-        margin-right: 0;
-      }
+      display: flex;
     }
+  }
+
+  &__study {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+.study {
+  &__item {
+    padding-top: 20px;
+    text-align: left;
   }
 }
 

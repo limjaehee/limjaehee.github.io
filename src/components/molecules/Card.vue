@@ -64,6 +64,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  position: relative;
 
   &__image {
     width: 100%;

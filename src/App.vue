@@ -15,7 +15,7 @@ export default {};
 }
 
 #app.darkmode {
-  background: #000;
+  background: #1b1d20;
   color: #fff;
 }
 

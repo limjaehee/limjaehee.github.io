@@ -39,17 +39,30 @@ export default {
 <style lang="scss">
 .card-list {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   padding-bottom: 15vh;
+  column-width: 500px;
+  column-gap: 15px;
 
   &__item {
-    height: 20vw;
-    flex: 0 0 calc(100% / 3 - 64px / 3);
-    margin-right: 32px;
-    margin-bottom: 40px;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
     animation: cardUp 1 1s forwards;
     opacity: 0;
+
+    $heights: (40vh, 45vh, 35vh, 35vh, 30vh, 50vh, 40vh, 35vh);
+
+    $i: 0;
+
+    @each $height in $heights {
+      $i: $i + 1;
+      &:nth-child(#{$i}) {
+        height: $height;
+      }
+    }
 
     /* SCSS */
     @for $i from 1 to 10 {
@@ -75,8 +88,10 @@ export default {
   }
 }
 
-//웹
-@media screen and (max-width: $wrapW) {
+@media screen and (max-width: 1820px) {
+  .card-list {
+    column-width: 350px;
+  }
 }
 
 //태블릿
@@ -84,17 +99,6 @@ export default {
   .card-list {
     padding-bottom: 20vh;
     &__item {
-      flex: 0 0 calc(50% - (20px / 2));
-      margin-right: 0;
-      height: 28vw;
-
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-
-      &:nth-child(odd) {
-        margin-right: 20px;
-      }
     }
   }
 }
@@ -102,23 +106,8 @@ export default {
 //모바일
 @media screen and (max-width: $mobileW) {
   .card-list {
-    padding-bottom: 15vh;
-    display: block;
-    &__item {
-      margin-right: 0;
-      height: 80vw;
-
-      &:nth-child(odd) {
-        margin-right: 0px;
-      }
-
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-    }
+    column-width: auto;
+    column-gap: 0;
   }
 }
 
