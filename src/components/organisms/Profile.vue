@@ -3,85 +3,96 @@
     <div class="profile__picture">
       <ImageWrap :Image="'profile.jpg'"></ImageWrap>
     </div>
-    <p class="profile__name">임재희</p>
-    <em class="profile__comment"
-      >안녕하세요:) <br />프론트엔드 2년차 임재희입니다.</em
-    >
-    <p>
-      "안되는건 없다 일단 해보자"라는 마인드로<br />
-      html, jQuery, css에만 안주하지 않고 <br />
-      vue.js와 scss, git을 배우며 프론트앤드로의 전문성을 높혀가고 있습니다.<br />
-      <br />
-      꾸준한 공부를 위해 벨로그에 지식을 기록하며 공유하고<br />
-      깃허브에 코드 소스를 정리해놓고 있습니다.
-    </p>
-    <ul class="profile__info">
-      <li class="profile__info__item">
-        <h3 class="profile__sub-title">Study</h3>
-        <ul class="profile__study">
-          <li class="profile__study__item study">
-            <ButtonIcon
-              :iconClass="'github'"
-              :commonClass="'profile__button'"
-              @click="goPage('https://github.com/limjaehee')"
-            ></ButtonIcon>
-            <p class="study__item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-              deserunt id inventore esse laboriosam doloremque. Nam repudiandae
-              facilis molestias nulla error. Eos repellendus ratione est quia
-              excepturi eveniet nemo impedit.
-            </p>
-          </li>
-          <li class="profile__study__item study">
-            <ButtonIcon
-              :iconClass="'vimeo'"
-              :commonClass="'profile__button'"
-              @click="goPage('https://velog.io/@rhak39')"
-            ></ButtonIcon>
-            <p class="study__item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-              deserunt id inventore esse laboriosam doloremque. Nam repudiandae
-              facilis molestias nulla error. Eos repellendus ratione est quia
-              excepturi eveniet nemo impedit.
-            </p>
-          </li>
-        </ul>
-        <!-- <div class="profile__button-wrapper">
-          
+    <article class="profile__box introduce">
+      <i class="icon-quotes-start1"></i>
+      <i class="icon-quotes-end1"></i>
+      <h3 class="profile__sub-title">
+        안녕하세요:) <br />프론트엔드 2년차
+        <strong class="profile__sub-title__strong">임재희</strong>입니다
+      </h3>
+      <p
+        class="profile__sub-comment"
+        :class="{ darkmode: $store.state.darkmode }"
+      >
+        <strong class="profile__sub-comment__strong"
+          >"안되는건 없다 일단 해보자"</strong
+        >라는 마인드로 <br />html, jQuery, css에만 안주하지 않고 <br />vue.js와
+        scss, git을 배우며 <br /><strong class="profile__sub-comment__strong"
+          >프론트엔드로의 전문성을 높혀가고 있습니다.</strong
+        >
+      </p>
+    </article>
+    <article class="profile__box">
+      <h3 class="profile__sub-title">
+        저는 이렇게
+        <strong class="profile__sub-comment__strong">공부</strong>합니다
+      </h3>
+      <p
+        class="profile__sub-comment"
+        :class="{ darkmode: $store.state.darkmode }"
+      >
+        꾸준한 공부를 위해 벨로그에
+        <strong class="profile__sub-comment__strong"
+          >지식을 기록하며 공유</strong
+        >하고<br />
+        깃허브에
+        <strong class="profile__sub-comment__strong">코드 소스를 정리</strong
+        >해놓고 있습니다.<br />
+        해당 버튼을 클릭하시면 사이트로 이동합니다.
+      </p>
+      <ul class="profile__study">
+        <li class="profile__study__item">
+          <ButtonIcon
+            :iconClass="'github'"
+            :commonClass="'profile__button'"
+            @click="goPage('https://github.com/limjaehee')"
+          ></ButtonIcon>
+        </li>
+        <li class="profile__study__item">
           <ButtonIcon
             :iconClass="'vimeo'"
             :commonClass="'profile__button'"
             @click="goPage('https://velog.io/@rhak39')"
           ></ButtonIcon>
-        </div> -->
-      </li>
-      <li class="profile__info__item">
-        <h3 class="profile__sub-title">Skills</h3>
-        <Tag :Tag="skills" class="profile__skills"></Tag>
-      </li>
-      <li class="profile__info__item">
-        <h3 class="profile__sub-title">Career</h3>
-        <p class="profile__sub-text">
-          <em
-            class="profile__sub-text__title"
-            :class="{ darkmode: $store.state.darkmode }"
-            >The Join</em
-          >
-          2020.11.02~2021.11.30
-        </p>
-      </li>
-      <li class="profile__info__item">
-        <h3 class="profile__sub-title">Activity</h3>
-        <p class="profile__sub-text">
-          <em
-            class="profile__sub-text__title"
-            :class="{ darkmode: $store.state.darkmode }"
-            >이젠아카데미(모바일 웹 &#38; 앱디자인)</em
-          >
-          2020.05.15~2020.10.06
-        </p>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </article>
+    <article class="profile__box">
+      <h3 class="profile__sub-title">
+        <strong class="profile__sub-comment__strong">언어</strong>와
+        <strong class="profile__sub-comment__strong">스킬</strong>을 배우는 것을
+        좋아해요
+      </h3>
+      <Tag :Tag="skills" class="profile__skills"></Tag>
+    </article>
+    <article class="profile__box">
+      <h3 class="profile__sub-title">
+        또한, 이런 <strong class="profile__sub-comment__strong">활동</strong>을
+        했어요
+      </h3>
+      <p class="profile__sub-text" :class="{ darkmode: $store.state.darkmode }">
+        <em
+          class="profile__sub-text__title"
+          :class="{ darkmode: $store.state.darkmode }"
+          >이젠아카데미(모바일 웹 &#38; 앱디자인)</em
+        >
+        2020.05.15~2020.10.06
+      </p>
+    </article>
+    <article class="profile__box">
+      <h3 class="profile__sub-title">
+        마지막으로 제
+        <strong class="profile__sub-comment__strong">커리어</strong>입니다 :)
+      </h3>
+      <p class="profile__sub-text" :class="{ darkmode: $store.state.darkmode }">
+        <em
+          class="profile__sub-text__title"
+          :class="{ darkmode: $store.state.darkmode }"
+          >The Join</em
+        >
+        2020.11.02~2021.11.30
+      </p>
+    </article>
   </div>
 </template>
 
@@ -136,7 +147,7 @@ export default {
   align-items: center;
   height: 100%;
   overflow: hidden;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
 
   &.darkmode {
     color: #fff;
@@ -166,26 +177,94 @@ export default {
     overflow: hidden;
     display: inline-block;
   }
-  &__name {
-    @include font-size(24px);
-    padding-top: 10px;
-  }
 
-  &__comment {
-    color: #b1b1b1;
-    @include font-size(18px);
-    font-style: unset;
-    padding-bottom: 54px;
+  &__sub-title {
+    font-weight: 200;
+    @include font-size(20px);
+    padding: 0 0 18px;
 
     br {
       display: none;
     }
+
+    &__strong {
+      font-weight: 600;
+    }
   }
 
-  &__sub-title {
-    font-weight: 600;
-    @include font-size(20px);
-    min-width: 100px;
+  &__sub-comment {
+    color: #999;
+    font-weight: 200;
+
+    &.darkmode {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__strong {
+      font-weight: 600;
+    }
+  }
+
+  &__box {
+    margin-top: 70px;
+
+    &.introduce {
+      position: relative;
+
+      .profile__sub-title {
+        opacity: 0;
+        animation: titleLeft 1 1s forwards;
+      }
+
+      .profile__sub-comment {
+        opacity: 0;
+        animation: titleRight 1 1s forwards;
+      }
+      @keyframes titleRight {
+        0% {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes titleLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .icon-quotes-start1 {
+        position: absolute;
+        left: -60px;
+        top: -20px;
+        @include font-size(50px);
+        color: rgba(0, 0, 0, 0.07);
+      }
+      .icon-quotes-end1 {
+        position: absolute;
+        right: -60px;
+        bottom: -20px;
+        @include font-size(50px);
+        color: rgba(0, 0, 0, 0.07);
+      }
+    }
+  }
+
+  &__study {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
   }
 
   &__button-wrapper {
@@ -211,6 +290,8 @@ export default {
   }
 
   &__skills {
+    max-width: 500px;
+    justify-content: center;
   }
 
   &__sub-text {
@@ -241,47 +322,17 @@ export default {
       }
     }
   }
-
-  &__info {
-    padding: 0 1rem;
-    width: 100%;
-    box-sizing: border-box;
-
-    &__item {
-      text-align: left;
-      background: #fff;
-      padding: 1rem 2rem;
-      box-sizing: border-box;
-      margin: 1rem 0 0 0;
-      border-radius: 10px;
-      display: flex;
-    }
-  }
-
-  &__study {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-    &__item {
-      width: 50%;
-    }
-  }
-}
-
-.study {
-  &__item {
-    padding-top: 20px;
-    text-align: left;
-  }
 }
 
 //모바일
 @media screen and (max-width: $mobileW) {
   .profile {
-    padding-top: 50px;
+    padding: 50px 1rem 140px;
+    &__sub-title {
+      br {
+        display: block;
+      }
+    }
 
     &::before {
       top: 110px;
@@ -291,15 +342,43 @@ export default {
       width: 90px;
       height: 90px;
     }
-  }
-}
 
-//모바일
-@media screen and (max-width: $mobileW) {
-  .profile {
-    &__comment {
-      br {
+    &__box {
+      margin-top: 70px;
+
+      &.introduce {
+        .icon-quotes-start1 {
+          left: -2px;
+          top: -25px;
+        }
+        .icon-quotes-end1 {
+          right: -2px;
+          top: -18px;
+        }
+      }
+    }
+
+    &__sub-text {
+      display: block;
+      color: #999;
+
+      &.darkmode {
+        color: #dcdcdc;
+      }
+
+      &__title {
         display: block;
+        font-weight: 400;
+        color: #555;
+
+        &.darkmode {
+          color: #fff;
+          font-weight: 300;
+        }
+
+        &::after {
+          display: none;
+        }
       }
     }
   }

@@ -3,7 +3,7 @@
     <transition name="up">
       <div class="nav-modal" v-if="Modal">
         <b class="nav-modal__title">안녕하세요!</b>
-        <span class="nav-modal__time">08:00 PM</span>
+        <!-- <span class="nav-modal__time">{{ time() }}</span> -->
         <ul class="nav-modal__list">
           <li class="nav-modal__list__item">
             <p>Darkmode {{ $store.state.darkmode ? "ON" : "OFF" }}</p>
@@ -71,14 +71,22 @@ export default {
     },
     darkMode(value) {
       this.$store.state.darkmode = value;
+    },
+    timeFun() {
+      const time = new Date();
+      const hour = time.getHours();
+      const minutes = time.getMinutes();
+      const seconds = time.getSeconds();
+
+      console.log("asdlkfjasdlkf");
+
+      return `${seconds}`;
+    },
+    time() {
+      return setInterval(this.timeFun(), 1000);
     }
   },
-  mounted() {
-    // this.Modal = true;
-    // setTimeout(() => {
-    //   this.Modal = false;
-    // }, 1000);
-  }
+  mounted() {}
 };
 </script>
 

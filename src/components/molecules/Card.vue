@@ -140,6 +140,9 @@ export default {
       .tag {
         &__item {
           display: none;
+          padding: 4px 10px;
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(8px);
 
           &:nth-child(1),
           &:nth-child(2),

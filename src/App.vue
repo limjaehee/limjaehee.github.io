@@ -20,7 +20,7 @@ export default {};
 }
 
 h2 {
-  @include font-size(36px);
+  @include font-size(40px);
 }
 
 h3 {

@@ -5,7 +5,7 @@
         :title="'CONTACT'"
         :type="'h2'"
         :text="
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore assumenda nulla, quas aut inventore veniam reiciendis aperiam tenetur ipsum dolorum ex pariatur perspiciatis nam earum, enim minima consectetur nihil.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore assumenda nulla, quas aut inventore veniam reiciendis aperiam tenetur ipsum dolorum ex pariatur perspiciatis nam earum, enim minima consectetur nihil.'
+          '안녕하세요. <br>제 포트폴리오 사이트에 방문해주셔서 감사합니다.:)<br>연락이 필요하시다면 오른쪽 양식을 채운 뒤에 메일을 보내주세요<br>메일은 1~2일 내에 확인됩니다.<br>'
         "
       ></TitleAndText>
       <p
@@ -166,7 +166,7 @@ export default {
 
     &__sub {
       color: #707070;
-      margin-top: 30px;
+      margin-top: 10px;
 
       &.darkmode {
         color: #ddd;
