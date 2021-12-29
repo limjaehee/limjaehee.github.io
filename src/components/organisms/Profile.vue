@@ -7,7 +7,7 @@
       <i class="icon-quotes-start1"></i>
       <i class="icon-quotes-end1"></i>
       <h3 class="profile__sub-title">
-        안녕하세요:) <br />프론트엔드 2년차
+        안녕하세요:) <br />웹 퍼블리셔 2년차
         <strong class="profile__sub-title__strong">임재희</strong>입니다
       </h3>
       <p
@@ -18,7 +18,7 @@
           >"안되는건 없다 일단 해보자"</strong
         >라는 마인드로 <br />html, jQuery, css에만 안주하지 않고 <br />vue.js와
         scss, git을 배우며 <br /><strong class="profile__sub-comment__strong"
-          >프론트엔드로의 전문성을 높혀가고 있습니다.</strong
+          >퍼블리셔의 전문성을 높혀가고 있습니다.</strong
         >
       </p>
     </article>
