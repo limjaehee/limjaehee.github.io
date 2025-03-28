@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import 'swiper/css'
 
 export const GlobalStyle = createGlobalStyle`
   #root,

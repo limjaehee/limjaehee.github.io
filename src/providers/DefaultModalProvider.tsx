@@ -6,7 +6,7 @@ import React, {
   useEffect,
 } from 'react'
 import DefaultModalContext from 'contexts/DefaultModalContext'
-import { zIndex } from 'public/styles/zIndex'
+import { zIndex } from 'assets/styles/zIndex'
 import useCustomLocation from 'hooks/useCustomLocation'
 import { DefaultModal } from 'types/defaultModal'
 

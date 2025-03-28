@@ -4,17 +4,8 @@ const COLORS = {
   danger: '#ff5655',
   warning: '#ffbf00',
 
-  // Green Shades
-  green05: '#f2faf8',
-  green10: '#d7f3ed',
-  green20: '#a7e5d8',
-  green30: '#73ccba',
-  green40: '#42b29b',
-  green50: '#02846a',
-  green60: '#006c56',
-  green70: '#005848',
-  green80: '#004739',
-  green90: '#00362b',
+  blue: '#2196F3',
+  darkBlue: '#1976D2',
 
   // Gray Shades
   gray05: '#f9fafb',
@@ -27,6 +18,9 @@ const COLORS = {
   gray70: '#596066',
   gray80: '#3b4043',
   gray90: '#282a2b',
+
+  red: '#e1001f',
+  darkRed: '#b5051d',
 
   white: '#ffffff',
   black: '#000000',
@@ -92,7 +86,8 @@ const FONT = {
 }
 
 const LAYOUT = {
-  inner: '24px',
+  mobileInner: '24px',
+  desktopInner: '8rem',
 }
 
 export const theme = {
