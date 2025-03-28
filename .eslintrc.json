@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "ignorePatterns": ["node_modules/"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/semi": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+    "no-useless-catch": "off",
+    "react/require-default-props": "off",
+    "prettier/prettier": ["error", {
+      "endOfLine": "auto", // 줄바꿈 자동 설정
+      "singleQuote": true, // Prettier에서 single quote 사용
+      "trailingComma": "all", // 마지막 쉼표 사용
+      "arrowParens": "avoid" // 단일 인자 화살표 함수에서 괄호 생략
+    }],
+    "import/prefer-default-export": "off", //export class 허용
+    "no-await-in-loop": "off", // 반복문 안에 await 허용
+    "class-methods-use-this": "off",
+    "jsx-a11y/label-has-associated-control": [2, {
+      "assert": "htmlFor", // htmlFor 속성을 사용해 연결 확인
+      "depth": 3 // 중첩된 자식 요소에서 input을 찾을 깊이 설정
+    }],
+    "spaced-comment": ["error", "always"]
+  }
+}

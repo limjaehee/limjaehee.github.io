@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2afb9ed4-5f21-4f40-a189-47392c063e7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/DefaultModal.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/DefaultModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/DefaultModalRenderer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/ModalBackground,style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modal/ModalBackground.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/DefaultModalContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useCustomLocation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/DefaultModalProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/fonts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Black.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Bold.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-ExtraBold.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-ExtraLight.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Light.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Medium.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Regular.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-SemiBold.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Thin.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/styles/styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/styles/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/styles/zIndex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/AppRouter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/defaultModal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;limjaehee&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/limjaehee/limjaehee.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;e68a2e25-fca9-4352-8dc5-444d1d7d959b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2uqYEkCWgJtUwROPE4jrogfU5LI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/limja/WebstormProjects/limjaehee.github.io/src/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\public" />
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\hooks" />
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\public\styles" />
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\providers" />
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\components\modal" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\public\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2afb9ed4-5f21-4f40-a189-47392c063e7c" name="Changes" comment="" />
+      <created>1742977462245</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742977462245</updated>
+      <workItem from="1742977463719" duration="3867000" />
+      <workItem from="1743129700545" duration="3115000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
