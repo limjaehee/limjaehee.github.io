@@ -84,7 +84,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .custom-fade-slide-enter {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(20px);
   }
   .custom-fade-slide-enter-active {
       opacity: 1;
@@ -97,7 +97,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .custom-fade-slide-exit-active {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(20px);
       transition:transform 200ms ease-out;
   }
 `

@@ -1,3 +1,5 @@
+export type CardTypeKey = 'front' | 'publish'
+
 export interface CardType {
   title: string
   image: string
@@ -10,6 +12,7 @@ export interface CardType {
     title: string
     text: string
   }[]
+  type: CardTypeKey
 }
 
 export type CardListType = CardType[]

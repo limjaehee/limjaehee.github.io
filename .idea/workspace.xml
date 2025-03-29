@@ -4,99 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2afb9ed4-5f21-4f40-a189-47392c063e7c" name="Changes" comment="build: 초기 세팅">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/chevron_left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/icon.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/jvmp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/jvmp2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/jvmp3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/jvmp4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/jvmp5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/todolist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/todolist2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/todolist3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/todolist편집.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/건기식9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/나트륨편집.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/루푸스.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/루푸스2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/루푸스3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/루푸스4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/루푸스5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/온서울건강온9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/올패스편집.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/content/푸드솔루션편집.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/fontStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/media.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/Button.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/card.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/home/CardModal.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/home/CardModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useOutsideModal.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/page.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/cardType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/images.d.ts" afterDir="false" />
+    <list default="true" id="2afb9ed4-5f21-4f40-a189-47392c063e7c" name="Changes" comment="build: 배포환경 세팅">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/visang8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/content/모두의대치동.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/DefaultModalProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/DefaultModalProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/fonts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/fonts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Black.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-Black.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Bold.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-Bold.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-ExtraBold.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-ExtraBold.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-ExtraLight.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-ExtraLight.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Light.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-Light.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Medium.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-Medium.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Regular.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-Regular.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-SemiBold.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-SemiBold.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/fonts/woff2-subset/Pretendard-Thin.subset.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/woff2-subset/Pretendard-Thin.subset.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/theme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/zIndex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/zIndex.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/content/todolist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/content/todolist2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/content/todolist3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/content/todolist편집.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/card.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/home/CardModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/home/CardModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/page.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/page.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,24 +56,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/limja/WebstormProjects/limjaehee.github.io/src/components/form",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/limja/WebstormProjects/limjaehee.github.io/src/components/form&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\components\form" />
@@ -154,6 +83,7 @@
       <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\constants" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\assets\images\content" />
       <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\public\styles" />
     </key>
   </component>
@@ -183,6 +113,8 @@
       <updated>1742977462245</updated>
       <workItem from="1742977463719" duration="3867000" />
       <workItem from="1743129700545" duration="14399000" />
+      <workItem from="1743173022578" duration="8511000" />
+      <workItem from="1743227246270" duration="7340000" />
     </task>
     <task id="LOCAL-00001" summary="build: 초기 세팅">
       <option name="closed" value="true" />
@@ -192,7 +124,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743132964389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 프로젝트 카드 및 모달">
+      <option name="closed" value="true" />
+      <created>1743180459723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743180459723</updated>
+    </task>
+    <task id="LOCAL-00003" summary="build: 배포환경 세팅">
+      <option name="closed" value="true" />
+      <created>1743180654944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743180654945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +177,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build: 초기 세팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: 초기 세팅" />
+    <MESSAGE value="feat: 프로젝트 카드 및 모달" />
+    <MESSAGE value="build: 배포환경 세팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: 배포환경 세팅" />
   </component>
 </project>

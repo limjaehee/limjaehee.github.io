@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useModal } from 'contexts/DefaultModalContext'
 import * as S from 'features/home/CardModal.style'
 import useClickOutside from 'hooks/useOutsideModal'
@@ -71,7 +71,9 @@ export default function CardModal({ id, card }: CardModalProps) {
           onReachEnd={() => {
             setIsEnd(true)
           }}
-          pagination={{ clickable: true }}
+          pagination={
+            cardData.SubImage.length > 1 ? { clickable: true } : false
+          }
         >
           {cardData.SubImage?.map(item => (
             <S.Slider key={`${item}`}>

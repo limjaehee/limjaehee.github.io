@@ -13,10 +13,11 @@ export const Layout = styled.div`
 export const Title = styled.h1`
   ${fontStyles.title2};
   font-weight: 500;
-  padding: 5dvh 0 20px;
+  padding: 5dvh 0 10px;
 
   ${breakpoints.desktop} {
     ${fontStyles.display2};
+    padding-bottom: 20px;
   }
 `
 
@@ -35,17 +36,11 @@ interface StyledFilterBtn {
 export const FilterBtn = styled.li<StyledFilterBtn>`
   background: ${props =>
     props.$active ? props.theme.colors.blue : props.theme.colors.gray10};
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 20px;
   color: ${props => (props.$active ? '#fff' : props.theme.colors.gray70)};
   cursor: pointer;
   transition: 0.1s;
-  ${fontStyles.label1};
-
-  ${breakpoints.desktop} {
-    ${fontStyles.body2};
-    padding: 10px 20px;
-  }
 `
 
 export const Container = styled.ul`
