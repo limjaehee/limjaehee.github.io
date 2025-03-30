@@ -19,7 +19,7 @@ export default function Navigation() {
         <NavLink to="/contact" style={navActiveStyle}>
           <EmailIcon />
         </NavLink>
-        <NavLink to="/sss" style={navActiveStyle}>
+        <NavLink to="/profile" style={navActiveStyle}>
           <UserIcon />
         </NavLink>
       </S.NavWrapper>

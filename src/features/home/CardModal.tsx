@@ -8,6 +8,7 @@ import { Swiper } from 'swiper/react'
 import { Swiper as SwiperInstance } from 'swiper'
 import { Pagination } from 'swiper/modules'
 import { CardValue } from 'constants/card'
+import Tag from 'components/label/Tag'
 
 interface CardModalProps {
   id: string
@@ -100,7 +101,7 @@ export default function CardModal({ id, card }: CardModalProps) {
         <S.Title>{cardData.title}</S.Title>
         <S.Tag>
           {cardData.Tag.map(tag => (
-            <S.TagItem># {tag}</S.TagItem>
+            <Tag>{tag}</Tag>
           ))}
         </S.Tag>
         <S.DetailList>

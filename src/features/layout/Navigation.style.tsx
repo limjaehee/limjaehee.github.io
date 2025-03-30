@@ -29,8 +29,8 @@ export const NavWrapper = styled.div`
   gap: 30px;
 
   svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 
   ${breakpoints.desktop} {
@@ -38,8 +38,8 @@ export const NavWrapper = styled.div`
     gap: 40px;
 
     svg {
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
     }
   }
 `

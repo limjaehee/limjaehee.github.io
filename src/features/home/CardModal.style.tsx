@@ -157,15 +157,6 @@ export const Tag = styled.ul`
   margin: 20px 0 40px;
 `
 
-export const TagItem = styled.li`
-  ${fontStyles.label1}
-  background: #efefef;
-  border-radius: 6px;
-  padding: 5px 16px;
-  color: #333;
-  font-weight: 500;
-`
-
 export const DetailList = styled.ul`
   display: flex;
   flex-direction: column;

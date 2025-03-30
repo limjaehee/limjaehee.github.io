@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { breakpoints } from 'assets/styles/media'
 import { fontStyles } from 'assets/styles/fontStyles'
+import { Tag } from 'components/label/Tag.style'
 
 export const Layout = styled.div`
   padding: 0 ${props => props.theme.layout.mobileInner};
@@ -157,9 +158,11 @@ export const MessageTitle = styled.h3`
   }
 `
 
-export const Tag = styled.ul`
+export const TagList = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
 
   &::after {
     content: '...';
@@ -177,16 +180,10 @@ export const Tag = styled.ul`
   }
 `
 
-export const TagItem = styled.li`
-  border-radius: 6px;
-  color: #333;
-  margin-right: 8px;
-  ${fontStyles.label2};
-  margin-bottom: 10px;
+export const TagItem = styled(Tag)`
+  background: rgba(255, 255, 255, 0.2) !important;
+  z-index: 1;
   display: none;
-  padding: 4px 10px 1px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
 
   &:nth-child(1),
   &:nth-child(2),
@@ -195,10 +192,8 @@ export const TagItem = styled.li`
   }
 
   ${breakpoints.desktop} {
-    ${fontStyles.label1};
-    padding: 4px 16px;
-    background: #efefef;
     display: block;
+    background: rgba(0, 0, 0, 0.08) !important;
 
     &::after {
       content: none;

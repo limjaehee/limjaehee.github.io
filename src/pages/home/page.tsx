@@ -75,11 +75,11 @@ function Page() {
                     </S.CardImage>
                     <S.CardMessage>
                       <S.MessageTitle>{item.title}</S.MessageTitle>
-                      <S.Tag>
+                      <S.TagList>
                         {item.Tag.map(tag => (
                           <S.TagItem># {tag}</S.TagItem>
                         ))}
-                      </S.Tag>
+                      </S.TagList>
                     </S.CardMessage>
                   </S.Card>
                 </S.Content>
