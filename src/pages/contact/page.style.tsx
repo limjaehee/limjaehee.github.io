@@ -76,7 +76,7 @@ export const SendBtn = styled.input`
   outline: none;
   height: 50px;
   margin-top: 20px;
-  background: ${props => props.theme.colors.blue};
+  background: ${props => props.theme.colors.black};
   color: #fff;
   border: none;
   border-radius: 10px;

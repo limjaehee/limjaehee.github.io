@@ -198,7 +198,7 @@ export const ProfileStudyBtn = styled.button`
   transition: 0.2s;
   color: #fff;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 
   svg {

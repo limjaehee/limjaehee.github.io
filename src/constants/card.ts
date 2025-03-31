@@ -90,8 +90,8 @@ export const CardValue: CardListType = [
     Tag: [
       'TypeScript',
       'React',
-      'TanStack Query',
       'Zustand',
+      'TanStack Query',
       'Styled-Components',
     ],
     CardDetail: [

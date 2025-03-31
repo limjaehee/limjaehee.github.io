@@ -35,7 +35,7 @@ interface StyledFilterBtn {
 
 export const FilterBtn = styled.li<StyledFilterBtn>`
   background: ${props =>
-    props.$active ? props.theme.colors.blue : props.theme.colors.gray10};
+    props.$active ? props.theme.colors.black : props.theme.colors.gray10};
   padding: 8px 16px;
   border-radius: 20px;
   color: ${props => (props.$active ? '#fff' : props.theme.colors.gray70)};
