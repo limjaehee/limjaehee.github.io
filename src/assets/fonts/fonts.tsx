@@ -64,7 +64,7 @@ const GlobalFontStyle = createGlobalStyle`
         font-style: normal;
     }
 
-    body {
+    body, * {
         font-family: Pretendard, sans-serif;
     }
 `

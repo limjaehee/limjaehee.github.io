@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { breakpoints } from 'assets/styles/media'
 import { fontStyles } from 'assets/styles/fontStyles'
 import { Tag } from 'components/label/Tag.style'
@@ -60,8 +60,20 @@ export const Container = styled.ul`
   }
 `
 
+const fadeUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+
 interface StyledContent {
   $height: number
+  $index: number
 }
 
 export const Content = styled.li<StyledContent>`
@@ -71,6 +83,9 @@ export const Content = styled.li<StyledContent>`
   width: 100%;
   box-sizing: border-box;
   height: ${props => `${props.$height}dvh`};
+  animation: ${fadeUp} 1 0.8s forwards;
+  opacity: 0;
+  animation-delay: ${props => `${props.$index * 0.08}s`};
 `
 
 export const CardImage = styled.div`

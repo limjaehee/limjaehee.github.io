@@ -4,7 +4,6 @@ import CardModal from 'features/home/CardModal'
 import { useModal } from 'contexts/DefaultModalContext'
 import { CardValue } from 'constants/card'
 import { CardListType, CardType, CardTypeKey } from 'types/cardType'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Layout from 'features/layout/Layout'
 
 function Page() {
@@ -56,36 +55,28 @@ function Page() {
           </S.FilterBtn>
         </S.FilterBtns>
         <S.Container>
-          <TransitionGroup className="list">
-            {cardList.map(item => (
-              <CSSTransition
-                key={item.title}
-                timeout={200}
-                classNames="custom-fade-slide"
-                unmountOnExit
-                data-board="board"
-              >
-                <S.Content
-                  $height={item.height}
-                  onClick={() => openCardModal(item)}
-                >
-                  <S.Card>
-                    <S.CardImage>
-                      <S.ImageBox $image={item.image} />
-                    </S.CardImage>
-                    <S.CardMessage>
-                      <S.MessageTitle>{item.title}</S.MessageTitle>
-                      <S.TagList>
-                        {item.Tag.map(tag => (
-                          <S.TagItem># {tag}</S.TagItem>
-                        ))}
-                      </S.TagList>
-                    </S.CardMessage>
-                  </S.Card>
-                </S.Content>
-              </CSSTransition>
-            ))}
-          </TransitionGroup>
+          {cardList.map((item, index) => (
+            <S.Content
+              $height={item.height}
+              onClick={() => openCardModal(item)}
+              key={`${item.title}-${filter}`}
+              $index={index}
+            >
+              <S.Card>
+                <S.CardImage>
+                  <S.ImageBox $image={item.image} />
+                </S.CardImage>
+                <S.CardMessage>
+                  <S.MessageTitle>{item.title}</S.MessageTitle>
+                  <S.TagList>
+                    {item.Tag.map(tag => (
+                      <S.TagItem># {tag}</S.TagItem>
+                    ))}
+                  </S.TagList>
+                </S.CardMessage>
+              </S.Card>
+            </S.Content>
+          ))}
         </S.Container>
       </S.Layout>
     </Layout>

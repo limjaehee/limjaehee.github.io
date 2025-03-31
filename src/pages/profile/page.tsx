@@ -34,12 +34,12 @@ function Page() {
         <S.ProfileBox>
           <S.ProfileIconQuotesStart />
           <S.ProfileIconQuotesEnd />
-          <S.ProfileTitle>
+          <S.ProfileTitle $isAnimation>
             안녕하세요 :) <br /> <strong>꾸준히 새로운 기술을 학습</strong>하는
             <br />
             4년차 프론트엔드 개발자입니다.
           </S.ProfileTitle>
-          <S.ProfileComment>
+          <S.ProfileComment $isAnimation>
             <strong>지속적인 학습과 공유를 통해 성장</strong>하는 개발자로,
             <br className="is-desktop" />
             현재는 React와 TypeScript를 실무에 적용하며
@@ -56,10 +56,10 @@ function Page() {
           </S.ProfileComment>
         </S.ProfileBox>
         <S.ProfileBox>
-          <S.ProfileTitle>
+          <S.ProfileTitle $isAnimation={false}>
             저는 이렇게 <strong>공부</strong>합니다
           </S.ProfileTitle>
-          <S.ProfileComment>
+          <S.ProfileComment $isAnimation={false}>
             꾸준한 공부를 위해 <strong>노션에 지식을 기록</strong>하고
             <br className="is-desktop is-mobile" />
             깃허브에 코드 소스를 정리해놓고 있습니다.
@@ -76,7 +76,7 @@ function Page() {
           </S.ProfileStudy>
         </S.ProfileBox>
         <S.ProfileBox>
-          <S.ProfileTitle>
+          <S.ProfileTitle $isAnimation={false}>
             <strong>언어</strong>와 <strong>스킬</strong>을 배우는 것을 좋아해요
           </S.ProfileTitle>
           <S.ProfileSkill>
@@ -86,7 +86,7 @@ function Page() {
           </S.ProfileSkill>
         </S.ProfileBox>
         <S.ProfileBox>
-          <S.ProfileTitle>
+          <S.ProfileTitle $isAnimation={false}>
             또한, 이런 <strong>활동</strong>을 했어요
           </S.ProfileTitle>
           <S.ProfileCareer>
@@ -99,7 +99,7 @@ function Page() {
           </S.ProfileCareer>
         </S.ProfileBox>
         <S.ProfileBox>
-          <S.ProfileTitle>
+          <S.ProfileTitle $isAnimation={false}>
             마지막으로 제 <strong>커리어</strong>입니다 :)
           </S.ProfileTitle>
           <S.ProfileCareer>

@@ -4,13 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2afb9ed4-5f21-4f40-a189-47392c063e7c" name="Changes" comment="feat: 프로젝트 추가 및 네비게이션 세팅" />
+    <list default="true" id="2afb9ed4-5f21-4f40-a189-47392c063e7c" name="Changes" comment="feat: 프로젝트 추가 및 네비게이션 세팅">
+      <change afterPath="$PROJECT_DIR$/src/components/form/Input.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Label.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Label.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Required.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Textarea.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Textarea.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useToast.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ToastProvider.style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ToastProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/toast.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/fonts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/fonts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact/page.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact/page.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact/page.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -25,6 +50,9 @@
     &quot;accountId&quot;: &quot;e68a2e25-fca9-4352-8dc5-444d1d7d959b&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -36,29 +64,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/limja/WebstormProjects/limjaehee.github.io/src/pages",
+    "last_opened_file_path": "C:/Users/gogom/WebstormProjects/limjaehee.github.io/src/hooks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Users\\limja\\WebstormProjects\\limjaehee.github.io\\node_modules\\typescript\\lib",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\gogom\\WebstormProjects\\limjaehee.github.io\\node_modules\\prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\gogom\\WebstormProjects\\limjaehee.github.io\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gogom\WebstormProjects\limjaehee.github.io\src\hooks" />
+      <recent name="C:\Users\gogom\WebstormProjects\limjaehee.github.io\src\providers" />
+      <recent name="C:\Users\gogom\WebstormProjects\limjaehee.github.io\src\components\form" />
       <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\pages" />
       <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\features\layout" />
-      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\components\form" />
-      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src" />
-      <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\public\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\limja\WebstormProjects\limjaehee.github.io\src\assets\icons" />
@@ -94,6 +125,8 @@
       <workItem from="1743129700545" duration="14399000" />
       <workItem from="1743173022578" duration="8511000" />
       <workItem from="1743227246270" duration="17154000" />
+      <workItem from="1743394056983" duration="37000" />
+      <workItem from="1743394101675" duration="5184000" />
     </task>
     <task id="LOCAL-00001" summary="build: 초기 세팅">
       <option name="closed" value="true" />

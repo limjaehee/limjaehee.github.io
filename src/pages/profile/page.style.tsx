@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
 import { breakpoints } from 'assets/styles/media'
 import { fontStyles } from 'assets/styles/fontStyles'
 import { QuotesEndIcon, QuotesStartIcon } from 'assets/icons/icon'
@@ -58,10 +58,41 @@ export const ProfilePicture = styled.div`
   }
 `
 
-export const ProfileTitle = styled.h2`
+const fadeLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+
+const fadeRight = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+
+interface StyledProfileTitle {
+  $isAnimation: boolean
+}
+
+export const ProfileTitle = styled.h2<StyledProfileTitle>`
   font-weight: 300;
   padding: 0 0 18px;
   ${fontStyles.headline3};
+  ${props =>
+    props.$isAnimation &&
+    css`
+      animation: ${fadeLeft} 1 0.5s ease-out;
+    `}
 
   strong {
     font-weight: 600;
@@ -72,10 +103,19 @@ export const ProfileTitle = styled.h2`
   }
 `
 
-export const ProfileComment = styled.p`
+interface StyledProfileComment {
+  $isAnimation: boolean
+}
+
+export const ProfileComment = styled.p<StyledProfileComment>`
   color: ${props => props.theme.colors.gray60};
   font-weight: 200;
   ${fontStyles.body3};
+  ${props =>
+    props.$isAnimation &&
+    css`
+      animation: ${fadeRight} 1 0.5s ease-out;
+    `}
 
   br {
     display: none;

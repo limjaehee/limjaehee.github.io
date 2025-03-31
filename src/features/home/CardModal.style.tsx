@@ -27,7 +27,7 @@ export const Modal = styled.div`
     grid-template-columns: 1fr 1fr;
     width: calc(100% - 16rem);
     overflow: hidden;
-    height: 60dvh;
+    height: 80dvh;
     max-height: 1000px;
     max-width: 1400px;
   }

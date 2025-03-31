@@ -83,7 +83,7 @@ export const CardValue: CardListType = [
     title: '나아파 에이전시',
     type: 'front',
     image: naafaaMain,
-    height: 28,
+    height: 45,
     SubImage: [naafaaMain, naafaa2, naafaa, naafaa3, naafaa4],
     github: '',
     link: '',
@@ -131,7 +131,7 @@ export const CardValue: CardListType = [
     title: '용인비상에듀 CRM',
     type: 'front',
     image: visang,
-    height: 25,
+    height: 40,
     SubImage: [
       visang,
       visang2,
