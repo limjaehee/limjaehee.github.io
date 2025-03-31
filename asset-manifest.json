@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c70d7db.css",
-    "main.js": "/static/js/main.4e3af3bc.js",
+    "main.js": "/static/js/main.d3cb8787.js",
     "static/media/나트륨.png": "/static/media/나트륨.cc39f03a30576c8ba0d9.png",
     "static/media/visang.png": "/static/media/visang.377928eee9697334a256.png",
     "static/media/visang4.png": "/static/media/visang4.fbee7b67f0b9a10635e8.png",
@@ -10,6 +10,7 @@
     "static/media/visang7.png": "/static/media/visang7.1a476525fdbbcd946b0b.png",
     "static/media/올패스.png": "/static/media/올패스.4a8dc22d6837044310d0.png",
     "static/media/온서울건강온.png": "/static/media/온서울건강온.0b02faabc680d604238d.png",
+    "static/media/profile.jpg": "/static/media/profile.bfefa4d8d4aa836774e0.jpg",
     "static/media/visang8.png": "/static/media/visang8.516440541943713fa6c0.png",
     "static/media/모두의대치동.png": "/static/media/모두의대치동.07acfaddb3b8f8d29e5f.png",
     "static/media/visang5.png": "/static/media/visang5.36c13a2e4edeab72e4c5.png",
@@ -71,16 +72,20 @@
     "static/media/루푸스4.png": "/static/media/루푸스4.beb76b04407189f099e7.png",
     "static/media/naafaa2.png": "/static/media/naafaa2.27b4166313a81110794b.png",
     "static/media/루푸스2.png": "/static/media/루푸스2.07aa824a9d789187db1b.png",
-    "static/media/home.svg": "/static/media/home.87150d275f223604e821cf1b20854eff.svg",
-    "static/media/email.svg": "/static/media/email.d3171f800753a31927e9e9180aecbcce.svg",
+    "static/media/notion.svg": "/static/media/notion.0b7d0e6490358b01592587a30afdfa60.svg",
+    "static/media/email.svg": "/static/media/email.9de466ded1cf90eaa7c12ecd66bf13a6.svg",
+    "static/media/quotes-end.svg": "/static/media/quotes-end.d4697c1b533cc6b97b0d80bd5b543cfa.svg",
+    "static/media/quotes-start.svg": "/static/media/quotes-start.e11e6f6a2416c00216b5a035beaf141f.svg",
+    "static/media/github.svg": "/static/media/github.941f81bc7332feed75aa58db0b591952.svg",
     "static/media/chevron_left.svg": "/static/media/chevron_left.33178733c74ee23693526bdcd66f78a4.svg",
-    "static/media/user.svg": "/static/media/user.5b04d3ad154cbb871e72cc87e2416bee.svg",
+    "static/media/home.svg": "/static/media/home.d4525bda31488120a7eb725e73361b7a.svg",
     "index.html": "/index.html",
+    "static/media/user.svg": "/static/media/user.32c43155da608f5a35b8f81b09b5c7ac.svg",
     "main.3c70d7db.css.map": "/static/css/main.3c70d7db.css.map",
-    "main.4e3af3bc.js.map": "/static/js/main.4e3af3bc.js.map"
+    "main.d3cb8787.js.map": "/static/js/main.d3cb8787.js.map"
   },
   "entrypoints": [
     "static/css/main.3c70d7db.css",
-    "static/js/main.4e3af3bc.js"
+    "static/js/main.d3cb8787.js"
   ]
 }
