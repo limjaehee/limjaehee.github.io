@@ -6,7 +6,7 @@ import Tag from 'components/label/Tag'
 import { GithubIcon, NotionIcon } from 'assets/icons/icon'
 
 const NOTION_SITE =
-  'https://jaeheelim.notion.site/IT-6447db576ac14880b871d221eb44d5d0?pvs=4'
+  'https://jaeheelim.notion.site/c52e467b438647ef997abe714268f70e?pvs=4'
 const GITHUB_SITE = 'https://github.com/limjaehee'
 
 function Page() {
