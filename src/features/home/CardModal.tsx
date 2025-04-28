@@ -3,10 +3,8 @@ import { useModal } from 'contexts/DefaultModalContext'
 import * as S from 'features/home/CardModal.style'
 import useClickOutside from 'hooks/useOutsideModal'
 import { CardListType, CardType } from 'types/cardType'
-import { Swiper } from 'swiper/react'
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Swiper as SwiperInstance } from 'swiper'
-import { Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Pagination } from 'swiper'
 import { CardValue } from 'constants/card'
 import Tag from 'components/label/Tag'
 
@@ -15,12 +13,10 @@ interface CardModalProps {
   card: CardType
 }
 
+SwiperCore.use([Pagination])
+
 export default function CardModal({ id, card }: CardModalProps) {
   const { closeModal } = useModal()
-  const [swiper, setSwiper] = useState<SwiperInstance | null>(null)
-  const [isLocked, setIsLocked] = useState(false) // 스와이프 잠김 상태
-  const [isBeginning, setIsBeginning] = useState(true)
-  const [isEnd, setIsEnd] = useState(false)
   const [cardData, setCardData] = useState<CardType>(card)
 
   const onClose = () => {
@@ -28,12 +24,6 @@ export default function CardModal({ id, card }: CardModalProps) {
   }
 
   useClickOutside(onClose, id)
-
-  // Swiper 초기화 및 상태 업데이트
-  const handleSwiperInit = (instance: SwiperInstance) => {
-    setSwiper(instance)
-    setIsLocked(instance.isLocked) // 스와이프 상태 저장
-  }
 
   const getOtherProject = () => {
     if (!cardData) return []
@@ -61,32 +51,23 @@ export default function CardModal({ id, card }: CardModalProps) {
       </S.ModalHeader>
       <S.SliderContainer>
         <Swiper
-          modules={[Pagination]}
-          slidesPerView="auto"
+          slidesPerView={1}
           spaceBetween={0}
-          onSwiper={handleSwiperInit}
-          onSlideChange={(instance: SwiperInstance) => {
-            setIsBeginning(instance.activeIndex === 0)
-            setIsEnd(instance.isEnd)
-          }}
-          onReachEnd={() => {
-            setIsEnd(true)
-          }}
-          pagination={
-            cardData.SubImage.length > 1 ? { clickable: true } : false
-          }
+          pagination={{ clickable: true }}
         >
           {cardData.SubImage?.map(item => (
-            <S.Slider key={`${item}`}>
-              <a
-                href={item}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="picture"
-              >
-                <img src={item} alt="" />
-              </a>
-            </S.Slider>
+            <SwiperSlide key={`${item}`} style={{ height: '100%' }}>
+              <S.Slider>
+                <a
+                  href={item}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="picture"
+                >
+                  <img src={item} alt="" />
+                </a>
+              </S.Slider>
+            </SwiperSlide>
           ))}
         </Swiper>
       </S.SliderContainer>

@@ -70,7 +70,7 @@ function Page() {
                   <S.MessageTitle>{item.title}</S.MessageTitle>
                   <S.TagList>
                     {item.Tag.map(tag => (
-                      <S.TagItem># {tag}</S.TagItem>
+                      <S.TagItem key={tag}># {tag}</S.TagItem>
                     ))}
                   </S.TagList>
                 </S.CardMessage>

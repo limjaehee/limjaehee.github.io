@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import 'swiper/css'
+import 'swiper/swiper-bundle.css'
 
 export const GlobalStyle = createGlobalStyle`
   #root,

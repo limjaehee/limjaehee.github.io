@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { SwiperSlide } from 'swiper/react'
 import { breakpoints } from 'assets/styles/media'
 import { ChevronLeftIcon } from 'assets/icons/icon'
 import Button from 'components/form/Button'
@@ -65,8 +64,12 @@ export const BackIcon = styled(ChevronLeftIcon)`
 export const SliderContainer = styled.div`
   height: 400px;
   margin-top: -100px;
+  overflow: hidden;
 
-  .swiper {
+  .swiper-wrapper {
+    height: 100%;
+  }
+  .swiper-container {
     height: 100%;
   }
 
@@ -80,7 +83,7 @@ export const SliderContainer = styled.div`
     display: flex;
     width: 80%;
     bottom: 20px;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -91,6 +94,8 @@ export const SliderContainer = styled.div`
       width: 100%;
       height: 6px;
       background: #fff;
+      border-radius: 0;
+      margin: 0;
 
       &.swiper-pagination-bullet-active {
         background: ${props => props.theme.colors.red};
@@ -99,7 +104,7 @@ export const SliderContainer = styled.div`
   }
 `
 
-export const Slider = styled(SwiperSlide)`
+export const Slider = styled.div`
   width: 100%;
   height: 100%;
   background: #f9f9f9;
