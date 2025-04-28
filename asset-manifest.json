@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c70d7db.css",
-    "main.js": "/static/js/main.7407971d.js",
+    "main.css": "/static/css/main.e9bba979.css",
+    "main.js": "/static/js/main.67ee24f8.js",
     "static/media/나트륨.png": "/static/media/나트륨.cc39f03a30576c8ba0d9.png",
     "static/media/visang.png": "/static/media/visang.377928eee9697334a256.png",
     "static/media/visang4.png": "/static/media/visang4.fbee7b67f0b9a10635e8.png",
@@ -72,20 +72,20 @@
     "static/media/루푸스4.png": "/static/media/루푸스4.beb76b04407189f099e7.png",
     "static/media/naafaa2.png": "/static/media/naafaa2.27b4166313a81110794b.png",
     "static/media/루푸스2.png": "/static/media/루푸스2.07aa824a9d789187db1b.png",
-    "static/media/notion.svg": "/static/media/notion.0b7d0e6490358b01592587a30afdfa60.svg",
-    "static/media/email.svg": "/static/media/email.9de466ded1cf90eaa7c12ecd66bf13a6.svg",
-    "static/media/quotes-end.svg": "/static/media/quotes-end.d4697c1b533cc6b97b0d80bd5b543cfa.svg",
-    "static/media/quotes-start.svg": "/static/media/quotes-start.e11e6f6a2416c00216b5a035beaf141f.svg",
-    "static/media/github.svg": "/static/media/github.941f81bc7332feed75aa58db0b591952.svg",
+    "static/media/notion.svg": "/static/media/notion.fa0cad3f8966705d852f9dc21b43a783.svg",
+    "static/media/email.svg": "/static/media/email.416ebb06aecdf757b29b5c5f8a08a50c.svg",
+    "static/media/quotes-end.svg": "/static/media/quotes-end.5261e991d0879b81e9bdf29d1b402239.svg",
+    "static/media/quotes-start.svg": "/static/media/quotes-start.f9993480fde22d2f95f9ce99dd34b2b7.svg",
+    "static/media/github.svg": "/static/media/github.444b85c98ca343ffa882378427a21c67.svg",
     "static/media/chevron_left.svg": "/static/media/chevron_left.33178733c74ee23693526bdcd66f78a4.svg",
     "index.html": "/index.html",
-    "static/media/home.svg": "/static/media/home.d4525bda31488120a7eb725e73361b7a.svg",
-    "static/media/user.svg": "/static/media/user.32c43155da608f5a35b8f81b09b5c7ac.svg",
-    "main.3c70d7db.css.map": "/static/css/main.3c70d7db.css.map",
-    "main.7407971d.js.map": "/static/js/main.7407971d.js.map"
+    "static/media/home.svg": "/static/media/home.aedae31d0e89cbd6b8b87073bbc7fe68.svg",
+    "static/media/user.svg": "/static/media/user.d867b8cbf7dd5c1aeb31adf27cecebe9.svg",
+    "main.e9bba979.css.map": "/static/css/main.e9bba979.css.map",
+    "main.67ee24f8.js.map": "/static/js/main.67ee24f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c70d7db.css",
-    "static/js/main.7407971d.js"
+    "static/css/main.e9bba979.css",
+    "static/js/main.67ee24f8.js"
   ]
 }
