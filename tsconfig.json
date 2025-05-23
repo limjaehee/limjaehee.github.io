@@ -20,7 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src", // 경로 시작 위치를 현재 위치로 설정
-    "types": ["@types/react-transition-group"]
+    "types": ["@types/react-transition-group", "node"]
   },
   "include": ["src"]
 }
