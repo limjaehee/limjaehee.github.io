@@ -81,7 +81,7 @@ function Page() {
           </S.ProfileTitle>
           <S.ProfileSkill>
             {skills.map(skill => (
-              <Tag>{skill}</Tag>
+              <Tag key={skill}>{skill}</Tag>
             ))}
           </S.ProfileSkill>
         </S.ProfileBox>
